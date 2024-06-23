@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 30em;
+}
+
+.users-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.user-item {
+    font-weight: bold;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
+
+.user-item:not(:last-child) {
+    border-top: 1px solid gray;
+}
+
+.user-item:last-child {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.user-item:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.207);
+}
+
+.user-photo {
+    margin: auto;
+    width: 60%;
+}
+
+.user-avatar {
+    width: 100%;
+}
+
+.active,
+.active:hover {
+    background-color: blue;
+}
